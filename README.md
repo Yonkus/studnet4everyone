@@ -126,6 +126,11 @@ Die Datei muss nun gespeichert und der Editor geschlossen werden mit den folgend
 2. `Y`
 3. `ENTER`
 
+Falls in der Datei versehentliche Änderungen passiert sind, die nicht mehr umkehrbar sind, dann hilft die Tastenkombination
+1. `STRG+X`
+2. `N`
+, welche die Bearbeitung abbricht ohne zu speichern.
+
 Dann sieht man wieder die normale Kommandozeile in der noch der folgende Befehl auszuführen ist:
 ```
 sudo service apache2 restart
