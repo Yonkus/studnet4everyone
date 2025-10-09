@@ -185,6 +185,9 @@ Nur der Router und der Raspberry-PI. Alle anderen Geräte, wie Handy, Tablet und
 ### Auf der Seite steht "INTERNET AN". Wie kann ich nun das Internet nutzen?
 Verbinde dich mit dem Gerät deiner Art zum WLan, gib das WLan-Passwort ein (nicht das aus der `config.json`, ehemals `admin`. Sondern das Passwort auf der Rückseite des Routers) und fertig.
 
+### Wo bekomme ich die Geräte her?
+Den Raspberry-PI bekommt man über Amazon oder gebraucht auch oft auf auf Ebay Kleinanzeigen. Die restlichen Dinge sind mit einem Gang zum Saturn erledigt.
+
 ### Mache ich mich mit diesem Setup angreifbar?
 Das ist ein Hobby-Projekt und kann eine bequeme Hilfe im Wohnheim-Alltag sein, aber die Sicherheit steht hier nicht an erster Stelle, da das den Setup-Prozess deutlich verlängern wurde. Allerdings bilden sich durch dieses Setup auch keine signifikanten Sicherheitslücken. Das WLan funktioniert so sicher wie jedes andere WLan auch. Allein die Seite zum Ein- und Ausschalten des Internets ist nicht wirklich abgesichert, da diese nicht verschlüsselt ist. Solange aber kein böswilliger Benutzer in dein WLan eingewählt ist (wofür er erstmal den WLan-Key braucht) und deinen unverschlüsselten Netzwerkverkehr mitliest sollte niemand im Stande sein dein Internet unbefugt an- und auszustellen.
 
