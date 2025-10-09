@@ -198,5 +198,8 @@ Den Raspberry-PI bekommt man über Amazon oder gebraucht auch oft auf auf Ebay K
 ### Mache ich mich mit diesem Setup angreifbar?
 Das ist ein Hobby-Projekt und kann eine bequeme Hilfe im Wohnheim-Alltag sein, aber die Sicherheit steht hier nicht an erster Stelle, da das den Setup-Prozess deutlich verlängern wurde. Allerdings bilden sich durch dieses Setup auch keine signifikanten Sicherheitslücken. Das WLan funktioniert so sicher wie jedes andere WLan auch. Allein die Seite zum Ein- und Ausschalten des Internets ist nicht wirklich abgesichert, da diese nicht verschlüsselt ist. Solange aber kein böswilliger Benutzer in dein WLan eingewählt ist (wofür er erstmal den WLan-Key braucht) und deinen unverschlüsselten Netzwerkverkehr mitliest sollte niemand im Stande sein dein Internet unbefugt an- und auszustellen.
 
+### Was, wenn ich mein Passwort für die Seite ändern will?
+Dafür wie in der Anleitung beschrieben über das Terminal zum PI verbinden, die `config.json` mit `nano` öffnen (steht auch in der Anleitung) und das gewünschte neue Passwort eintragen. Dann mit den Tastenkombinationen speichern und dann tritt das neue Passwort in Kraft.
+
 ### Was wenn etwas nicht funktioniert?
 Wende dich an den Informatiker deines Vertrauens und zeig ihm diese Seite oder an die Wohnheimgruppe. Ich, der Ersteller dieses Projektes, und ein paar andere Leute, die dieses Setup auch schon erhalten haben, helfen auch gern bei der Einrichtung. Und wenn alles nicht klappt, dann funktioniert das Studnet letztlich immernoch über den ursprünglichen Weg mit dem Studnet-Client oder dem SSH-Kommando.
