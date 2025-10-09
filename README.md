@@ -137,13 +137,14 @@ Dann sieht man wieder die normale Kommandozeile in der noch der folgende Befehl 
 sudo service apache2 restart
 ```
 
-Schließlich die folgenden Befehle ausführen:
-1. `cd /var/www/html`
-2. `git clone https://github.com/Yonkus/studnet4everyone.git internet`
+Schließlich den folgenden Befehl ausführen:
+```
+git clone https://github.com/Yonkus/studnet4everyone.git /var/www/html/internet
+```
 
 Fast geschafft. Nun muss nur noch die Seite konfiguriert werden mit der das Internet an- und ausgeschaltet wird. Dazu wieder mit dem Texteditor `nano` eine Datei bearbeiten:
 ```
-nano internet/config.json
+nano /var/www/html/internet/config.json
 ```
 
 Der Inhalt der Datei sollte dann so aussehen:
