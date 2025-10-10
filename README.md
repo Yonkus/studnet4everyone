@@ -209,3 +209,10 @@ Dafür wie in der Anleitung beschrieben über das Terminal zum PI verbinden, die
 
 ### Was wenn etwas nicht funktioniert?
 Wende dich an den Informatiker deines Vertrauens und zeig ihm diese Seite oder an die Wohnheimgruppe. Ich, der Ersteller dieses Projektes, und ein paar andere Leute, die dieses Setup auch schon erhalten haben, helfen auch gern bei der Einrichtung. Und wenn alles nicht klappt, dann funktioniert das Studnet letztlich immernoch über den ursprünglichen Weg mit dem Studnet-Client oder dem SSH-Kommando.
+
+### Ich komme mit der Befehlszeile nicht zurecht
+ChatGPT kann da auch gut helfen. Hier einige wichtige Stichworte für den Kontext, die bei der Fehlersuche mit ChatGPT helfen könnten:
+- Arbeitsumgebung: Raspberry-PI, Linux, nur über das Terminal (ohne GUI)
+- Installierte Pakete: nano, apache2, php, screen, sshpass, unzip, git
+- Verwendeter Texteditor: nano
+- GitHub-Repository: https://github.com/Yonkus/studnet4everyone.git
