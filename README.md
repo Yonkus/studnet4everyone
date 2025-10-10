@@ -1,5 +1,7 @@
 # 1. Was ist STUDNET4EVERYONE?
 
+![Logo](/images/logo.png)
+
 Dieses Projekt bietet eine verständliche Anleitung für ein WLan-Setup für die
 Studentenwohnheime der Uni Leipzig, welche Internet über das Studnet beziehen.
 
@@ -24,12 +26,14 @@ werden.
 |Gerät|Modelle|Kosten|Wietere Infos|
 |-----|-------|------|------------|
 |Router|z.B. `Fritzbox 7490` oder `TP-Link TL-WR841N` oder andere|Unter 50€|Gibt WLan.|
-|Raspberry-Pi|Alles ab Modell 3|40€ bis 70€|Kleine grüne Leiterplatte, so groß wie eine Kreditkarte, die als eigenständiger Computer eingesetzt werden kann.|
+|Raspberry-Pi|Alles ab Modell 3|40€ bis 70€|Kleine grüne Leiterplatte, so groß wie eine Kreditkarte, die als eigenständiger Computer eingesetzt werden kann (siehe Bild).|
 |Micro-USB-Kabel|Mit Steckdosenanschluss|7€|Ist oft schon beim Raspberry-PI mit dabei.|
 |SD-Karte|Micro-SD, z.B. von `SanDisk`|Unter 10€|Mindestens 16GB. Evtl. auch weniger (auf eigene Gefahr)|
 |2 LAN-/Ethernet-Kabel|Egal|5€ bis 10€|Eins ist meistens beim Router schon mit drin.|
 
-Damit kommt man letztlich auf ungefähr 100€ wenn man sich beim Kaufen geschickt anstellt und nichts gegen gebrauchtes Zeug hat.
+Damit kommt man letztlich auf ungefähr 100€, wenn man sich beim Kaufen geschickt anstellt. Realistischerweise kann man mit gebrauchtem Zeug hier sogar auf 20€ bis 50€ kommen.
+
+![Raspberry-PI](/images/raspberry-pi.jpg)
 
 ## 1.2 Weitere Notwendigkeiten
 
@@ -59,6 +63,8 @@ Dieses Kapitel setzt voraus, dass alle genannten Vorbedingungen erfüllt sind.
 10. Dann auf `Speichern` und alle weiteren Dialoge Bestätigen.
 11. Dann wird der Schreibvorgang gestartet, was eine Weile dauern kann.
 12. Nach Fertigstellung kann die SD-Karte aus dem PC entfernt werden.
+
+![Oberfläche vom Raspberry-PI Imager](/images/imager.png)
 
 ## 2.2 Router einrichten
 
@@ -149,14 +155,8 @@ nano /var/www/html/internet/config.json
 ```
 
 Der Inhalt der Datei sollte dann so aussehen:
-```
-{
-    "mieternummer": "deine-mieternummer",
-    "mieterpasswort": "dein-mieterpasswort",
-    "studnethost": "139.18.143.253",
-    "adminpasswort": "admin"
-}
-```
+
+![config.json](/images/config.png)
 
 Hier die Platzhalter `deine-mieternummer` und `dein-mieterpasswort` durch die Mieternummer und das Passwort auf dem Zettel vom Studentenwohnheim ersetzen. Es empfiehlt sich das Admin-Passwort von `admin` auf ein selbst gewähltes Passwort zu ändern. Dieses muss dann später beim Ein- und Ausschalten des Internets angegeben werden (also sollte man sich dieses gut merken).
 
@@ -176,7 +176,7 @@ Von nun an kann das Internet nun folgendermaßen angeschaltet werden:
    wobei `XXXXX` durch den in Punkt 8 in Abschnitt [2.1](#21-betriebssystem-auf-die-sd-karte-schreiben) vergebenen Hostnamen ersetzt werden muss
 4. Es erscheint eine einfache hässliche Seite mit einem Eingabefeld und einem Button. Das sieht dann etwa so aus:
 
-![aSDASDAS](/screenshot.png)
+![Screenshot von der Seite](/images/screenshot.png)
 
 In das Eingabefeld kommt das Passwort aus der `config.json` (ehemals `admin`) und mit dem Button wird die Eingabe bestätigt. Dann sollte eine Nachricht zu sehen sein, dass das Internet an ist. Sie Seite kann nun geschlossen werden und alle Geräte, die mit dem WLAN verbunden sind haben nun Internetzugang.
 
