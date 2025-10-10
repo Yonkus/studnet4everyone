@@ -12,7 +12,7 @@ Das Ziel dieses Projektes ist ein einfaches WLan-Setup, welches keine laufenden
 Geräte, wie Handy/PC/... erfordert, sondern diese Aufgabe auf einen Raspberry-PI
 auslagert.
 
-Für weitere Informationen siehe das FAQ am Ende.
+Für weitere Informationen siehe das [FAQ](#3-faq) am Ende.
 
 **!!!Achtung!!!**: ich übernehme keine Verantwortung falls irgendetwas nicht klappt und manche Geräte dann umsonst gekauft wurden. Ich kann aber versuchen bei Problemen zu helfen. Schließlich hat dieses Setup in 3/3 mir bekannten Fällen bisher geklappt.
 
@@ -87,10 +87,10 @@ Wenn PC, Router und Raspberry-PI nun laufen und das Internet an ist, kann der Ra
    ```
    ssh XXXXX@YYYYY
    ```
-   Wobei `XXXXX` durch den Benutzernamen aus Punkt 9 in Abschnitt `2.1` zu ersetzen ist und `YYYYY` durch den Hostnamen aus Punkt 8 in Abschnitt `2.1`.
+   Wobei `XXXXX` durch den Benutzernamen aus Punkt 9 in Abschnitt [2.1](#21-betriebssystem-auf-die-sd-karte-schreiben) zu ersetzen ist und `YYYYY` durch den Hostnamen aus Punkt 8 in Abschnitt [2.1](#21-betriebssystem-auf-die-sd-karte-schreiben).
    Dann `ENTER`
 3. Möglicherweise taucht daraufhin eine Abfrage auf. Diese mit `yes` beantworten und mit `ENTER` bestätigen.
-4. Es erscheint eine Passwort-Abfrage. Hier das Passwort aus Punkt 9 in Abschnitt `2.1` eingeben. **Achtung**: eingegebene Zeichen werden nicht angezeigt. Das Passwort muss blind eingegeben und mit `ENTER` bestätigt werden.
+4. Es erscheint eine Passwort-Abfrage. Hier das Passwort aus Punkt 9 in Abschnitt [2.1](#21-betriebssystem-auf-die-sd-karte-schreiben) eingeben. **Achtung**: eingegebene Zeichen werden nicht angezeigt. Das Passwort muss blind eingegeben und mit `ENTER` bestätigt werden.
 5. Bei erfolgreicher Passworteingabe ist man nun mit der Konsole des Raspberry-PI verbunden.
 
 ## 2.6 Raspberry-PI konfigurieren
@@ -172,7 +172,7 @@ Von nun an kann das Internet nun folgendermaßen angeschaltet werden:
    ```
    XXXXX.local/internet/index.php
    ```
-   wobei `XXXXX` durch den in Punkt 8 in Abschnitt `2.1` vergebenen Hostnamen ersetzt werden muss
+   wobei `XXXXX` durch den in Punkt 8 in Abschnitt [2.1](#21-betriebssystem-auf-die-sd-karte-schreiben) vergebenen Hostnamen ersetzt werden muss
 4. Es erscheint eine einfache hässliche Seite mit einem Eingabefeld und einem Button. Das sieht dann etwa so aus:
 
 ![aSDASDAS](/screenshot.png)
@@ -183,11 +183,17 @@ Auf diese Weise kann das Internet auch wieder ausgeschaltet werden (also ins WLa
 
 # 3. FAQ
 
-### Wozu brauche ich diese Seite?
-Mit dieser Seite, welche über alle Geräte erreichbar ist, die mit dem WLan verbunden sind, kann das Internet an- oder ausgeschaltet werden. Wenn mal der Router oder Raspberry-PI ausgeschaltet werden (z.B. wegen Stromausfall) oder das Internet im gesamten Wohnheim ausfällt, dann muss das Internet über diese Seite über den in `2.7` genannten Prozess (neu) gestartet werden. Und evtl. auch mal an- und ausgeschaltet werden bei Internetproblemen.
+### Was ist der Vorteil dieses Setups?
+Wenn dieses Setup läuft, ist es möglich das eigene Wohnheimzimmer (oder die gesamte WG) mit WLan zu versorgen ohne dauerhaft ein eigenes Gerät (PC, Handy, Tablet, ...) mit dem Studnet-Client oder SSH zu verbinden. Zudem kann das Internet manuell über eine private Webseite im lokalen Netz ein- und ausgeschaltet werden.
+
+### Wieso funktioniert das Setup ohne den Studnet-Client/SSH?
+Letztlich macht das Setup das Gleiche, wie auch der Studnet-Client/SSH bloß nicht auf einem eigenen Gerät, sondern auf dem Raspberry-PI. Oben drauf kommt ein Webinterface zum bequemen Ein- und Ausschalten der Internetverbindung.
+
+### Wozu brauche ich die Seite, welche ich über den Browser aufrufe?
+Mit dieser Seite, welche über alle Geräte erreichbar ist, die mit dem WLan verbunden sind, kann das Internet an- oder ausgeschaltet werden. Wenn mal der Router oder Raspberry-PI ausgeschaltet werden (z.B. wegen Stromausfall) oder das Internet im gesamten Wohnheim ausfällt, dann muss das Internet über diese Seite über den in [2.7](#27-ausprobieren) genannten Prozess (neu) gestartet werden. Und evtl. auch mal an- und ausgeschaltet werden bei Internetproblemen.
 
 ### Welche Geräte müssen laufen, damit das Internet verfügbar ist?
-Nur der Router und der Raspberry-PI. Alle anderen Geräte, wie Handy, Tablet und PC müssen dafür nicht mehr an sein. Nur für das einmalige Anschalten des Internets über die in `2.9` genannte Seite wird eines dieser Geräte benötigt. Selbst die Seite kann nach dem Anmachen geschlossen werden.
+Nur der Router und der Raspberry-PI. Alle anderen Geräte, wie Handy, Tablet und PC müssen dafür nicht mehr an sein. Nur für das einmalige Anschalten des Internets über die in [2.7](#27-ausprobieren) genannte Seite wird eines dieser Geräte benötigt. Selbst die Seite kann nach dem Anmachen geschlossen werden.
 
 ### Auf der Seite steht "INTERNET AN". Wie kann ich nun das Internet nutzen?
 Verbinde dich mit dem Gerät deiner Art zum WLan, gib das WLan-Passwort ein (nicht das aus der `config.json`, ehemals `admin`. Sondern das Passwort auf der Rückseite des Routers) und fertig.
