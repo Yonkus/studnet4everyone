@@ -65,7 +65,8 @@ Dieses Kapitel setzt voraus, dass alle genannten Vorbedingungen erfüllt sind.
 1. Router an den Strom anschließen.
 2. Studnet-Steckdose mit einem LAN-Kabel mit dem Router verbinden (hier nur die separat gekennzeichnete Buchse am Router verwenden).
 3. Eine Zeit lang warten bis der Router hochgefahren ist und die WLan-Leuchte an ist (ca. 1 bis 5 Minuten).
-4. Für den Fall, dass der Router bereits vorher in Betrieb war (z.B. wenn er gebraucht gekauft wurde) sollte dieser erst auf Werkseinstellungen zurückgesetzt werden. Dafür existieren Anleitungen auf YouTube für die verschiedenen Hersteller.
+4. Für den Fall, dass der Router bereits vorher in Betrieb war (z.B. wenn er gebraucht gekauft wurde) sollte dieser erst auf Werkseinstellungen zurückgesetzt werden. Dafür existieren Anleitungen auf YouTube für die verschiedenen Hersteller. Möglicherweise muss nach dem Resetten noch die Administrationsseite aufgerufen und konfiguriert werden (auch hier sei auf YouTube verwiesen).
+5. Auf der Administrationsseite des Routers sollte eingestellt sein, dass der Router seine öffentliche IP dynamisch vom Internetprovider bezieht. Dies funktioniert unterschiedlich für jeden Hersteller. Hier hilft das Internet oder ChatGPT. Einfach einen Suchbegriff eingeben, wie `tp link router configure dynamic ip` und es sollten genügend Anleitungen auftauchen. Die korrekte Anleitung wird wahrscheinlich auf die Router-Administrationsseite verweisen, um dort in den Internet/WAN-Einstellungen die Dynamische IP-Vergabe (oft auch `DHCP`) zu aktivieren.
 
 ## 2.3 Raspberry-PI in Betrieb nehmen
 
