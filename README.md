@@ -217,3 +217,6 @@ ChatGPT kann da auch gut helfen. Hier einige wichtige Stichworte für den Kontex
 - Installierte Pakete: nano, apache2, php, screen, sshpass, unzip, git
 - Verwendeter Texteditor: nano
 - GitHub-Repository: https://github.com/Yonkus/studnet4everyone.git
+
+### Ich habe Verbesserungsvorschläge. Wie kann ich diese einbringen?
+Gerne ein GitHub-Issue aufmachen, dann vergebe ich Developer-Rechte.
