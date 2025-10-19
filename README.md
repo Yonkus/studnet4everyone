@@ -144,9 +144,10 @@ Dann sieht man wieder die normale Kommandozeile in der noch der folgende Befehl 
 sudo service apache2 restart
 ```
 
-Schließlich den folgenden Befehl ausführen:
+Schließlich die folgenden beiden Befehle ausführen:
 ```
 git clone https://github.com/Yonkus/studnet4everyone.git /var/www/html/internet
+chmod -R a+rX /var/www/html/internet
 ```
 
 Fast geschafft. Nun muss nur noch die Seite konfiguriert werden mit der das Internet an- und ausgeschaltet wird. Dazu wieder mit dem Texteditor `nano` eine Datei bearbeiten:
